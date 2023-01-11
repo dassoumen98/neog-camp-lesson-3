@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Libary</title>
+    <!--  external css  -->
+        <link rel="stylesheet" href="style.css">
+
+    <!--  internal css
+    <style>
+
+    </style> -->
 </head>
 <body>
-    <h1> Soumen Component Libary</h1>
+    <h1 > Soumen Component Libary</h1>
+    <!-- inline css
+        <h1 style=""> Soumen Component Libary</h1>
+     -->
+
     <p>I am attending neog.camp and I want to make a libary which would make all my projects look good and consistent  </p>
     <hr>
 
@@ -22,10 +33,10 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page </div>
+    <div class="container-fulid">This is a fluid container and it will go till the end of the page </div>
     
     <h3>fluid container</h3>
-    <div>This is a centered container and it will go till the specified link
+    <div class="container container-center">This is a centered container and it will go till the specified link
 
     </div>
 
@@ -34,13 +45,13 @@
 
     <h2>@Links</h2>
 
-    <a href="/">primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a href="/" class="link link-primary ">primary Link</a>
+    <a href="/" class="link link-secondary ">Secondary Link</a>
 
     <hr>
 
     <h3>unordered list</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
@@ -48,7 +59,8 @@
     </ul>
      
     <h3>inline unordered list</h3>
-    <ul>
+
+    <ul class="list-item-inline">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
@@ -66,10 +78,10 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li><a href="/">home</a></li>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-inline  ">
+            <li class="link"><a href="/">home</a></li>
             <li><a href="/">project</a></li>
             <li><a href="/">about</a></li>
         </ul>
@@ -79,29 +91,33 @@
 
    
     <h2>@header</h2>
-    <header>
-        <img src="images/hero.svg" alt="">
-        <h1>heading inside here</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" alt="">
+        <h1 class="hero-heading">heading inside here</h1>
 
     </header>
 
     <hr>
     <h2>@section</h2>
-    <Section>
+    <Section class="section">
+        <div class="container container-center">
+
+        
 
         <h3>@white section</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam facere ipsum cumque iste eveniet debitis amet molestias laudantium corporis.</p>
+    </div>    
     </Section>
-    
-    <Section>
-
+    <Section class="section ow">
+        <div class="container container-center">
         <h3>@off white section</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aliquam facere ipsum cumque iste eveniet debitis amet molestias laudantium corporis.</p>
+    </div>
     </Section>
 
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links">
             <li>socialone</li>
             <li>socialtwo</li>
             <li>socialthree</li>
